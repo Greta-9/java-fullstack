@@ -15,9 +15,9 @@ public class calcolaPerimetroArea { //la classe deve corrispondere al nome del f
         int perimetro;
         area = lato * lato;
         perimetro = lato * 4;
-        System.out.println(lato);
-        System.out.println(area);
-        System.out.println(perimetro);
+        System.out.println("Il lato inserito: " + lato);
+        System.out.println("L'area e': " + area);
+        System.out.println("Il perimetro e': " + perimetro);
         input.close(); // la chiusura è opzionale, ma se non viene fatta l'input resta evidenziato in giallo
 
     }
