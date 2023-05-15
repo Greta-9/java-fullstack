@@ -11,8 +11,13 @@ public class calcolaPerimetroArea {
         System.out.print("Inserisci la lunghezza del lato: ");
         int lato; 
         lato = input.nextInt(); 
-        if (lato > 40 || lato < 1) { //aggiunta una condizione aggiuntiva che verifica l'input sia compreso tra due valori
-            System.out.println("Il numero inserito non e' valido"); // se l'input è >40
+        if (lato > 40 || lato < 1) { 
+             if (lato > 40) {
+            System.out.println("Il numero inserito e' troppo grande"); // se l'input>40
+            }
+             if (lato < 1) {
+            System.out.println("Il numero inserito e' troppo piccolo"); // se l'input<1
+            }
         }
         else { //se l'input è <= a 40
         int area;
