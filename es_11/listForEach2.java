@@ -31,5 +31,6 @@ public class listForEach2
         {
             System.out.println(frutta);
         }
+        input.close();
     }
 }
