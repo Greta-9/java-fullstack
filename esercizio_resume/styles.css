@@ -1,0 +1,68 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: foto; }
+.item5 { grid-area: footer; }
+
+.grid-container1 {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-areas:
+    'header header header header'
+    'menu main main foto'
+    'menu footer footer footer';
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    outline: auto;
+    justify-content: space-evenly;
+}
+
+.grid-container1 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    outline: auto;
+}
+.item2{
+    float: left;
+    width: 100%;
+    padding: 20px;
+    font-size: large;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    padding: 20px;
+
+}
+  /* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li{
+    position: relative;
+    text-align: center;
+    margin-top: 100%;
+    margin-bottom: 100%;
+}
+.item3 {
+    float: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+  /* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+    outline: auto;
+}
+.item4 img{
+    width: 800px;;
+    height:500px;
+}
