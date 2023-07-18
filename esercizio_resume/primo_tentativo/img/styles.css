@@ -83,7 +83,7 @@ body{
 
 .item3 {
     text-align: center;
-    float: right;
+    float: center;
     padding: 20px;
     width: 100%;
 }
@@ -99,7 +99,7 @@ body{
 }
 
 .item5{
-    float:right;
+    float:left;
 }
 .item5 img{
     max-width: 800px;
